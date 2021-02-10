@@ -1,0 +1,72 @@
+<!doctype html> 
+<!-- ali.atilgan1024@gmail.com-->
+<html>
+<head>
+<meta charset="utf-8" meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Term Project</title>
+	
+<link href="index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	
+<header> <div class="header"> <strong>TO DO LİST </strong> </div></header>
+	<main class="main" id="main">
+		<article class="article" id="article">
+		<table class="mainTable">
+			
+  <tbody>
+    <tr>
+      <th scope="col" class="menu">START TIME</th>
+      <th scope="col" class="menu">END TIME</th>
+      <th scope="col" class="menu">TITLE</th>
+	  <th scope="col" class="menu">LOCATION</th>
+		</tr>
+	 
+			<th> <!-- START TIME SELECT -->   
+  <div class="sd-container">
+	  <input id ="startTime" class="sd" type="time" name="selected_date" />
+    <span class="open-button">  
+      <button type="button"></button>
+    </span>
+  </div>
+</th>
+
+   <th>  <!--END TIME SELECT --> 
+	<div class="sd-container">
+    <input id ="endTime" class="sd" type="time" name="selected_date" />
+    <span class="open-button">
+      <button type="button"></button>
+    </span>
+  </div>
+</th>		
+   <th> <!-- SUBJECT -->
+		<textarea placeholder="Subject here..." style="resize:none" id="subject" cols="20" rows="3"></textarea>		
+</th>  		
+   <th> 
+	   <!-- LOCATİON -->
+			<textarea placeholder="Location here..." style="resize:none" id="location" cols="20" rows="3"></textarea>
+			</th> 
+			
+			<!-- ADD BOTTOM -->
+			<th scope="col">
+				<button id="enter" class="btn-grad">ADD</button>
+			</th>
+
+  </tbody>
+		<tr height="60px"></tr>
+		</table>
+	</article>
+	
+	<div class="todoList" id="takvim1">
+		<ul></ul>
+	</div>
+		<!-- SCRIPT -->
+	<script type="text/javascript" src="index.js"></script>
+   
+	</main>
+
+	<footer><div class="footer">ali.atilgan1024@gmail.com</div>
+	</footer>
+
+	</body>
+</html>
